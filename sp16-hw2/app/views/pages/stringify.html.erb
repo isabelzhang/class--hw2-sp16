@@ -1,5 +1,5 @@
 <h1> Isabel's Web page </h1>
-<% if @name && @adjective %>
+<% if @name == nil and @adjective == nil %>
 	<% str = ' is so ' %>
 	<%= "#{@name}#{str}#{@adjective}"%>
 <% else %>
