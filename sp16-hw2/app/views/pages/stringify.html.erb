@@ -1,0 +1,7 @@
+<h1> Isabel's Web page </h1>
+<% if @name && @adjective %>
+	<% str = ' is so ' %>
+	<%= "#{@name}#{str}#{@adjective}"%>
+<% else %>
+	<%= 'You are nothing!' %>
+<% end %>
